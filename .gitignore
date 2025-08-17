@@ -37,3 +37,6 @@ Thumbs.db
 *.json
 *.pkl
 !requirements.txt
+*.npy
+*enhanced*.csv
+*embeddings*
