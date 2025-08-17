@@ -40,7 +40,7 @@ def literature_review_workflow(topic, years_back=5):
     print(f"Found {len(relevant_papers)} papers related to '{topic}'")
     
     # 2. Filter by recency
-    cutoff_date = pd.Timestamp.now() - pd.DateOffset(years=years_back)
+    cutoff_date = pd.Timestamp.now(tz='UTC') - pd.DateOffset(years=years_back)
     recent_papers = relevant_papers[relevant_papers['published'] > cutoff_date]
     
     print(f"Recent papers (last {years_back} years): {len(recent_papers)}")
@@ -137,7 +137,7 @@ def competitive_analysis_workflow(your_approach, competitor_approaches):
         papers = df[df['combined'].str.contains(approach, case=False, na=False)]
         
         if len(papers) > 0:
-            recent_papers = papers[papers['published'] > pd.Timestamp.now() - pd.DateOffset(years=2)]
+            recent_papers = papers[papers['published'] > pd.Timestamp.now(tz='UTC') - pd.DateOffset(years=2)]
             
             analysis[approach] = {
                 'total_papers': len(papers),
@@ -174,6 +174,7 @@ def technology_landscape_workflow(domain):
     print(f"=== Technology Landscape: {domain} ===")
     
     searcher = ArxivSearcher()
+    searcher.data_dir = "../meta-query-search/data"  # Fix path for examples
     
     if not searcher.load_existing_data():
         print("No data found! Please run: ../arxiv search machine learning --save")
@@ -195,6 +196,7 @@ def technology_landscape_workflow(domain):
     
     # Time-based analysis
     df['year'] = df['published'].dt.year
+    domain_papers['year'] = domain_papers['published'].dt.year
     recent_years = domain_papers[domain_papers['year'] >= 2020]
     older_years = domain_papers[domain_papers['year'] < 2020]
     
@@ -238,6 +240,7 @@ def research_gap_workflow(established_area, emerging_area):
     print(f"Emerging: {emerging_area}")
     
     searcher = ArxivSearcher()
+    searcher.data_dir = "../meta-query-search/data"  # Fix path for examples
     
     if not searcher.load_existing_data():
         print("No data found! Please run: ../arxiv search machine learning --save")
