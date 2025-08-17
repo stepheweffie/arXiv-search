@@ -12,7 +12,7 @@
 🧠 **AI-Powered Semantic Search** - Find papers using natural language queries with transformer embeddings  
 📊 **Interactive Visual Analytics** - Beautiful charts, word clouds, and 2D embedding visualizations  
 📚 **Complete Jupyter Book** - Professional documentation with executable notebooks  
-🎯 **1,500+ Pre-analyzed Papers** - Ready-to-use dataset spanning 30+ years  
+🎯 **Multiple Datasets Available** - 1,000 papers (working), 1,500 papers (visual), 3,000+ papers (CLI tool)
 🔬 **Advanced ML Clustering** - Discover research paper relationships and groups  
 📈 **Publication Trend Analysis** - Track research evolution over time
 
@@ -298,13 +298,24 @@ Query papers using natural language instead of exact keywords:
 
 ## 📊 Dataset Statistics
 
-**Current Analysis Results:**
-- 📚 **Total Papers**: 1,500+ research papers
+**📚 Available Datasets:**
+
+**1. Visual Analytics Notebook (1,500 papers):**
 - 📅 **Date Range**: 1992-2025 (33 years of research)
 - 🆕 **Recent Papers**: 229 papers (last 2 years)
 - 🏷️ **Keyword Matches**: 616 papers with ML terms in titles
 - 🎯 **Research Clusters**: 8 distinct ML research groups
 - 🧮 **Embedding Dimensions**: 768-dimensional transformer embeddings
+
+**2. Working Integration Notebook (1,000 papers):**
+- 🆕 **Recent Papers**: 128 papers (last 2 years)
+- 🏷️ **Keyword Matches**: 433 papers with ML terms in titles
+- 📈 **Same ML clustering and embedding analysis**
+
+**3. CLI Tool Dataset (3,000+ papers):**
+- 📁 **Stored in**: `meta-query-search/data/` (pickle files)
+- 🔄 **d6tflow managed** workflow data
+- 📊 **Command-line accessible** via `./arxiv` commands
 
 **Top Research Topics:**
 - Machine Learning: 656 papers
