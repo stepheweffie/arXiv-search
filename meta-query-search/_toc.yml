@@ -11,6 +11,8 @@ chapters:
   title: "🤖 Transformer Setup & Models"
 - file: working_integrated
   title: "🔍 Simple Semantic Search"
+- file: visual_optimized
+  title: "⭐ Visual Analytics - Optimized Results"
 - file: visual_integrated
-  title: "🎨 Visual Analytics & Interactive Charts"
+  title: "🎨 Visual Analytics - Full Implementation"
 - file: markdown-notebooks
