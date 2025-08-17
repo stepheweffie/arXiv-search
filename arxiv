@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# arXiv Search Tool Wrapper Script
+# This script activates the virtual environment and runs the arXiv search tool
+
+# Get the directory where this script is located
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+# Activate the virtual environment and run the Python script
+cd "$SCRIPT_DIR"
+source env/bin/activate
+python arxiv_search.py "$@"
