@@ -1,0 +1,1 @@
+🔍 Comprehensive semantic search & analytics platform for arXiv papers using SPECTER vs Sentence-Transformers, with interactive Jupyter Book documentation and cross-domain AI research exploration.

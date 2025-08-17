@@ -15,4 +15,8 @@ chapters:
   title: "⭐ Visual Analytics - Optimized Results"
 - file: visual_integrated
   title: "🎨 Visual Analytics - Full Implementation"
+- file: specter_comparison
+  title: "🔬 SPECTER vs Sentence-Transformers Model Comparison"
+- file: semantic_search_enhanced
+  title: "🎨 Enhanced Semantic Search with Real Results"
 - file: markdown-notebooks
