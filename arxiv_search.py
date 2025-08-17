@@ -110,11 +110,11 @@ class ArxivSearcher:
             df = df[df['published'] > cutoff_date]
         
         if start_date:
-            start_date = pd.to_datetime(start_date)
+            start_date = pd.to_datetime(start_date, utc=True)
             df = df[df['published'] >= start_date]
         
         if end_date:
-            end_date = pd.to_datetime(end_date)
+            end_date = pd.to_datetime(end_date, utc=True)
             df = df[df['published'] <= end_date]
         
         return df
