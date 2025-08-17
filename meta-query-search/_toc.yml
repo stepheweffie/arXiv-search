@@ -6,4 +6,11 @@ root: intro
 chapters:
 - file: markdown
 - file: notebooks
+  title: "📊 Data Processing with d6tflow"
+- file: transformer-notebooks  
+  title: "🤖 Transformer Setup & Models"
+- file: working_integrated
+  title: "🔍 Simple Semantic Search"
+- file: visual_integrated
+  title: "🎨 Visual Analytics & Interactive Charts"
 - file: markdown-notebooks

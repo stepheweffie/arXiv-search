@@ -1,11 +1,26 @@
-# Welcome to your Jupyter Book
+# 🚀 arXiv Visual Search & Analytics
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Welcome to the comprehensive **arXiv research paper discovery system** with advanced semantic search and beautiful visualizations!
 
-Check out the content pages bundled with this sample book to see more.
+## 🎯 What This Book Contains:
+
+- **📊 Data Processing**: Automated arXiv paper collection using d6tflow workflows
+- **🤖 AI-Powered Search**: Transformer-based semantic embeddings for intelligent paper discovery  
+- **🎨 Interactive Visualizations**: Stunning charts, word clouds, and 2D embedding spaces
+- **📈 Analytics Dashboard**: Publication trends, clustering analysis, and research insights
+
+## 🔍 Key Features:
+
+✨ **1,500+ Research Papers** processed with full semantic analysis
+🎯 **Natural Language Search** - find papers using plain English queries
+📊 **Visual Analytics** - interactive charts and publication trend analysis
+🧠 **ML-Powered Clustering** - discover research paper groups and relationships
+☁️ **Word Clouds** - beautiful keyword visualization
+📈 **Time Series Analysis** - track research trends over 30+ years
+
+## 🚀 Getting Started:
+
+Explore the different notebook sections to see the full research discovery pipeline in action!
 
 ```{tableofcontents}
 ```
